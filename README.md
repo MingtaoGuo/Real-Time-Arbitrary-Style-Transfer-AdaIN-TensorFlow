@@ -12,4 +12,18 @@ Procedure of this method is as shown in follow figure.
 How to train the network
 ------------------------
 
-Firstly, you should download the data sets ([MSCOCO]() and [wikiart]()). Putting them into the file 'content' and 'style' respectively.
+Python packages you need:
+
+1. python 3.x
+2. tensorflow 1.4.0
+3. numpy
+4. scipy
+5. pillow
+
+Data sets you need:
+
+1. Content images data sets ([MSCOCO]())
+2. Style images data sets ([wikiart]())
+
+Results of our code
+--------------------
