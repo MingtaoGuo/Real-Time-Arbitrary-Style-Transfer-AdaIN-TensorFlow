@@ -28,8 +28,8 @@ class main:
         self.Opt = tf.train.AdamOptimizer(1e-4).minimize(self.Loss)
         self.sess = tf.Session()
         self.sess.run(tf.global_variables_initializer())
-        content_list = os.listdir("E://DeepLearn_Experiment//MSCOCO//")
-        style_list = os.listdir("E://DeepLearn_Experiment//ArtImgSet//")
+        content_list = os.listdir("./content/")
+        style_list = os.listdir("./style/")
         saver = tf.train.Saver()
         for i in range(80000):
             content_batch_locs = np.random.randint(0, content_list.__len__(), batch_size)
@@ -38,11 +38,11 @@ class main:
             style_batch = np.zeros([batch_size, 128, 128, 3])
             for j in range(batch_size):
                 try:
-                    content_batch[j, :, :, :] = resize_and_crop(np.array(Image.open("E://DeepLearn_Experiment//MSCOCO//" + content_list[content_batch_locs[j]])), 128)
-                    style_batch[j, :, :, :] = resize_and_crop(np.array(Image.open("E://DeepLearn_Experiment//ArtImgSet//" + style_list[style_batch_locs[j]])), 128)
+                    content_batch[j, :, :, :] = resize_and_crop(np.array(Image.open("./content/" + content_list[content_batch_locs[j]])), 128)
+                    style_batch[j, :, :, :] = resize_and_crop(np.array(Image.open("./style/" + style_list[style_batch_locs[j]])), 128)
                 except:
-                    content_batch[j, :, :, :] = resize_and_crop(np.array(Image.open("E://DeepLearn_Experiment//MSCOCO//" + content_list[0])), 128)
-                    style_batch[j, :, :, :] = resize_and_crop( np.array(Image.open("E://DeepLearn_Experiment//ArtImgSet//" + style_list[0])), 128)
+                    content_batch[j, :, :, :] = resize_and_crop(np.array(Image.open("./content/" + content_list[0])), 128)
+                    style_batch[j, :, :, :] = resize_and_crop( np.array(Image.open("./style/" + style_list[0])), 128)
 
             self.sess.run(self.Opt, feed_dict={self.content: content_batch, self.style: style_batch})
             if i % 10 == 0:
@@ -52,7 +52,7 @@ class main:
             if i % 2000 == 0:
                 saver.save(self.sess, "./trained_para_justin/model.ckpt")
 
-def test(content_path="C://Users//gmt//Desktop//ship.png", style_path="C://Users//gmt//Desktop//s.jpg", alpha=1.0):
+def test(content_path, style_path, alpha=1.0):
     c = np.array(Image.open(content_path))
     c = np.reshape(c, [1, c.shape[0], c.shape[1], c.shape[2]])
     s = np.array(Image.open(style_path))
