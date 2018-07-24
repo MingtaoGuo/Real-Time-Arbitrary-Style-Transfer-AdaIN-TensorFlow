@@ -23,7 +23,11 @@ Python packages you need:
 Data sets you need:
 
 1. Content images data sets ([MSCOCO](http://images.cocodataset.org/zips/train2017.zip))
-2. Style images data sets ([wikiart]())
+2. Style images data sets ([wikiart](https://www.kaggle.com/c/painter-by-numbers/data))
+
+Pretrained model vgg19:
+
+1. Please click [here]() to download
 
 Results of our code
 --------------------
