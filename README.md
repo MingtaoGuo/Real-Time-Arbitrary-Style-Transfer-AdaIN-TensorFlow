@@ -27,3 +27,9 @@ Data sets you need:
 
 Results of our code
 --------------------
+
+Style | ![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/ori.jpg) | ![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/ori1.jpg)
+:-- | :--: | --:
+![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/s1.jpg) | ![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/result1.jpg)  | ![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/result3.jpg)
+![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/s2_3.jpg) | ![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/result6.jpg)  | ![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/result5.jpg)
+![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/fire.jpg) | ![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/result7.jpg)  | ![](https://github.com/MingtaoGuo/Real-time-Arbitrary-Style-Transfer/blob/master/Figures/result4.jpg)
