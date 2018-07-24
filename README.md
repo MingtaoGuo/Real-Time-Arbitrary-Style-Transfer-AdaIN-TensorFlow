@@ -23,11 +23,14 @@ Python packages you need:
 Data sets you need:
 
 1. Content images data sets ([MSCOCO](http://images.cocodataset.org/zips/train2017.zip))
+    Firstly, Unzip the MSCOCO dataset, and then put all images into the folder 'content'
 2. Style images data sets ([wikiart](https://www.kaggle.com/c/painter-by-numbers/data))
-
+    Firstly, Unzip the wikiart dataset, and then put all images into the folder 'style'
+    
 Pretrained model vgg19:
 
 1. Please click [BaiduYun](https://pan.baidu.com/s/1CO-A2GOoym7eCw0hQsvEyw) to download
+    when you have downloaded the file 'vgg.mat', put it into the folder 'vgg_para'.
 
 Results of our code
 --------------------
