@@ -22,7 +22,7 @@ Python packages you need:
 
 Data sets you need:
 
-1. Content images data sets ([MSCOCO]())
+1. Content images data sets ([MSCOCO](http://images.cocodataset.org/zips/train2017.zip))
 2. Style images data sets ([wikiart]())
 
 Results of our code
