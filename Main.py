@@ -50,7 +50,7 @@ class main:
                 print("Step: %d, Total_loss: %f, Content_loss: %f, Style_loss: %f"%(i, Loss, c_loss, s_loss))
                 Image.fromarray(np.uint8(mapping(styled_img[0, :, :, :]))).save("./result/"+str(i)+".jpg")
             if i % 2000 == 0:
-                saver.save(self.sess, "./trained_para_justin/model.ckpt")
+                saver.save(self.sess, "./trained_para/model.ckpt")
 
 def test(content_path, style_path, alpha=1.0):
     c = np.array(Image.open(content_path))
